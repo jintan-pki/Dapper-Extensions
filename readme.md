@@ -1,5 +1,6 @@
 # Introduction
 
+This repro uses .Net Standard 2.0, .Net Framework 4.6.1 and Dapper 2.0.35. Open the sln with Visual Studio 2019, run unit test with NUnit V3 Test Adapter.
 Dapper Extensions is a small library that complements [Dapper](https://github.com/SamSaffron/dapper-dot-net) by adding basic CRUD operations (Get, Insert, Update, Delete) for your POCOs. For more advanced querying scenarios, Dapper Extensions provides a predicate system. The goal of this library is to keep your POCOs pure by not requiring any attributes or base class inheritance.
 
 Customized mappings are achieved through [ClassMapper](https://github.com/tmsmith/Dapper-Extensions/wiki/AutoClassMapper). 
@@ -19,7 +20,7 @@ Features
 * Singular and Pluralized table name support (Singular by default).
 * Easy-to-use [Predicate System](https://github.com/tmsmith/Dapper-Extensions/wiki/Predicates) for more advanced scenarios.
 * Properly escapes table/column names in generated SQL (Ex: SELECT [FirstName] FROM [Users] WHERE [Users].[UserId] = @UserId_0)
-* Unit test coverage (150+ Unit Tests)
+* Unit test coverage (300+ Unit Tests)
 
 Naming Conventions
 ------------------

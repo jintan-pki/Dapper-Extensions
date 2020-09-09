@@ -1,0 +1,7 @@
+﻿DROP TABLE IF EXISTS Car;
+
+CREATE TABLE Car (
+    Id VARCHAR(15),
+    Name VARCHAR(50),
+    PRIMARY KEY(id)
+);
