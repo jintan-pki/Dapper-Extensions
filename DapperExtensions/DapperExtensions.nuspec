@@ -2,15 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata schemaVersion="2">
     <id>DapperExtensions</id>
-    <version>1.6.3</version>
-    <authors>Thad Smith, Page Brooks</authors>
-    <owners>Thad Smith, Page Brooks</owners>
+    <version>2.0.0</version>
+    <authors>Thad Smith, Page Brooks, Jin Tan</authors>
+    <owners>Thad Smith, Page Brooks, Jin Tan</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>https://github.com/tmsmith/Dapper-Extensions</projectUrl>
+    <projectUrl>https://github.com/jintan-pki/Dapper-Extensions</projectUrl>
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A small library that complements Dapper by adding basic CRUD operations (Get, Insert, Update, Delete) for your POCOs. For more advanced querying scenarios, Dapper Extensions provides a predicate system.</description>
     <releaseNotes>
+	  2.0.0
+	  * Convert to .Net Starndard and reference Dapper 2.0.35
       1.6.2 / 1.6.3
       * Exposed Ignore keys on update in usages of Implementor
       1.6.1
@@ -23,20 +25,14 @@
     </releaseNotes>
     <tags>orm sql micro-orm Data Dapper</tags>
 	<dependencies>
-      <dependency id="Dapper" version="1.12" />
+      <dependency id="Dapper" version="2.0.35" />
     </dependencies>
     <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System.Core"/>
-      <frameworkAssembly assemblyName="System"/>
-      <frameworkAssembly assemblyName="System.Data"/>
-      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.0-Client, .NETFramework4.0" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" Version="4.7.0"  />
     </frameworkAssemblies>
   </metadata>
   <files>
-  	<file src="bin\Release\DapperExtensions.dll" target="lib\net40" />
-    <file src="bin\Release\DapperExtensions.pdb" target="lib\net40" />
-
-    <file src="..\DapperExtensions.Net45\bin\Release\DapperExtensions.dll" target="lib\net45" />
-    <file src="..\DapperExtensions.Net45\bin\Release\DapperExtensions.pdb" target="lib\net45" />
+  	<file src="bin\Release\DapperExtensions.dll" target="lib\netstandard2.1" />
+    <file src="bin\Release\DapperExtensions.pdb" target="lib\netstandard2.1" />
   </files>  
 </package>

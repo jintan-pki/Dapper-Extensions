@@ -1,6 +1,7 @@
 # User-specific files
 *.user
 *.suo
+.vs
 
 # Build
 [Bb]in
