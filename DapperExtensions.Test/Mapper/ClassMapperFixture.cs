@@ -72,12 +72,15 @@ namespace DapperExtensions.Test.Mapper
             }
 
             [Test]
-            [ExpectedException(typeof(ApplicationException))]
+            //[ExpectedException(typeof(ApplicationException))]
             public void UnMapThrowExceptionWhenMappingDidntPreviouslyExist()
             {
-                var target = new FooClassMapper();
+                Assert.Throws<ApplicationException>(delegate ()
+                {
+                    var target = new FooClassMapper();
 
-                target.UnMap(p => p.Name);
+                    target.UnMap(p => p.Name);
+                });
             }
         }
 
