@@ -1,7 +1,7 @@
 # Introduction
 
-# New change here
-* This repro uses .Net Standard 2.0 to support .net core\framework, and using Dapper 2.0.35. 
+# New changes here
+* This repro uses .Net Standard 2.0 to support .Net Core\Framework and using Dapper 2.0.35. 
 * Open the sln with Visual Studio 2019, run unit test with NUnit V3 Test Adapter.
 
 Dapper Extensions is a small library that complements [Dapper](https://github.com/SamSaffron/dapper-dot-net) by adding basic CRUD operations (Get, Insert, Update, Delete) for your POCOs. For more advanced querying scenarios, Dapper Extensions provides a predicate system. The goal of this library is to keep your POCOs pure by not requiring any attributes or base class inheritance.
